@@ -1,8 +1,14 @@
 import java.util.Scanner;
 
 class ShopItems {
-  int totalCount;
+    // INSTANCE FIELDS
+    int totalCount;
 
+    // NESTED CLASSES
+    class NonVegan {
+        //INSTANCE FIELDS
+        int iceCreamCount, shakeCount, totalCount;
+    }
 }
 
 public class IceCreamShop {
