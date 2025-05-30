@@ -16,6 +16,11 @@ class ShopItems {
             ShopItems.this.totalCount += count;
         }
     }
+
+    class Vegan {
+        // INSTANCE FIELDS
+        int smoothieCount, slushieCount, totalCount;
+    }
 }
 
 public class IceCreamShop {
