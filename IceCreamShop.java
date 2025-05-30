@@ -8,6 +8,13 @@ class ShopItems {
     class NonVegan {
         //INSTANCE FIELDS
         int iceCreamCount, shakeCount, totalCount;
+
+        public void increaseCount(int type, int count) {
+            if (type == 1) iceCreamCount += count;
+            if (type == 2) shakeCount += count;
+            totalCount += count;
+            ShopItems.this.totalCount += count;
+        }
     }
 }
 
