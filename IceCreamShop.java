@@ -35,8 +35,8 @@ public class IceCreamShop {
   public static void main(String[] args) {
     ShopItems shopItems = new ShopItems();
     ShopItems.NonVegan nonVegan = shopItems.new NonVegan();
-    ShopItems.Vegan Vegan = shopItems.new Vegan();
-    
+    ShopItems.Vegan vegan = shopItems.new Vegan();
+
     int orderType = 0;
     Scanner input = new Scanner(System.in);
     int itemCount = 0;
@@ -49,13 +49,13 @@ public class IceCreamShop {
       System.out.println("How many items of this item would you like to order?");
       itemCount = input.nextInt();
       if(orderType == 1){
-        itemName = "ice cream";
+        itemName = "ice cream"; nonVegan.increaseCount(orderType, itemCount);
       } else if(orderType == 2) {
-        itemName = "shake";
+        itemName = "shake"; nonVegan.increaseCount(orderType, itemCount);
       } else if(orderType == 3) {
-        itemName = "smoothie";
+        itemName = "smoothie"; vegan.increaseCount(orderType, itemCount);
       } else if(orderType == 4) {
-        itemName = "slushie";
+        itemName = "slushie"; vegan.increaseCount(orderType, itemCount);
       } else {
         break;
       }
