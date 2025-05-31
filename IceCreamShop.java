@@ -65,5 +65,8 @@ public class IceCreamShop {
       System.out.println("Type a number for the next item in your order:\n1: Ice cream\n2: Shake\n3: Smoothie\n4: Slushie\n");
       orderType = input.nextInt();
     }
+    System.out.println("Thank you for your order! Today we have sold " + shopItems.totalCount + "orders of sweetness!");
+    System.out.println(nonVegan.totalCount + " items have been ice cream and shakes");
+    System.out.println(vegan.totalCount + " items have been smoothies and slushies");
   }
 }
