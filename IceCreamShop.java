@@ -20,6 +20,13 @@ class ShopItems {
     class Vegan {
         // INSTANCE FIELDS
         int smoothieCount, slushieCount, totalCount;
+
+        public void increaseCount(int type, int count) {
+            if (type == 3) smoothieCount += count;
+            if (type == 4) slushieCount += count;
+            totalCount += count;
+            ShopItems.this.totalCount += count;
+        }
     }
 }
 
