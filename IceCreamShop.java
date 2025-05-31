@@ -33,6 +33,10 @@ class ShopItems {
 public class IceCreamShop {
 
   public static void main(String[] args) {
+    ShopItems shopItems = new ShopItems();
+    ShopItems.NonVegan nonVegan = shopItems.new NonVegan();
+    ShopItems.Vegan Vegan = shopItems.new Vegan();
+    
     int orderType = 0;
     Scanner input = new Scanner(System.in);
     int itemCount = 0;
