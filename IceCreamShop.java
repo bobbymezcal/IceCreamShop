@@ -42,7 +42,7 @@ public class IceCreamShop {
     int itemCount = 0;
     String itemName;
 
-    System.out.println("Hello! Welcome to the ice cream shop. We are ready to take your order. For ice-cream type 1, for shakes type 2, for smoothies type 3, and for slushies type 4. If you are done ordering type 0.");
+    System.out.println("\n\nHello! Welcome to the ice cream shop. \nWe are ready to take your order. \n\nFor ice-cream type 1, for shakes type 2, for smoothies type 3, and for slushies type 4. \nIf you are done ordering type 0.");
     orderType = input.nextInt();
 
     while(orderType != 0) {
@@ -62,10 +62,10 @@ public class IceCreamShop {
 
       System.out.println("Adding " + itemCount + " of the item "+ itemName + " to your order!");
 
-      System.out.println("Type a number for the next item in your order:\n1: Ice cream\n2: Shake\n3: Smoothie\n4: Slushie\n");
+      System.out.println("\n\nType a number for the next item in your order:\n1: Ice cream\n2: Shake\n3: Smoothie\n4: Slushie\n\nIf you are done ordering type 0.");
       orderType = input.nextInt();
     }
-    System.out.println("Thank you for your order! Today we have sold " + shopItems.totalCount + "orders of sweetness!");
+    System.out.println("Thank you for your order! Today we have sold " + shopItems.totalCount + " orders of sweetness!");
     System.out.println(nonVegan.totalCount + " items have been ice cream and shakes");
     System.out.println(vegan.totalCount + " items have been smoothies and slushies");
   }
